@@ -1,0 +1,14 @@
+[
+  {
+    "healthcheck-scraper-type": "cloudflared-tunnel-connector",
+    "scrape_url": "http://localhost:8080/ready",
+    "scrape_interval_seconds": 120,
+    "ping_url": "http://your-monitoring-service.com/health"
+  },
+  {
+    "healthcheck-scraper-type": "cloudflared-tunnel-connector",
+    "scrape_url": "http://localhost:8081/ready",
+    "scrape_interval_seconds": 60,
+    "ping_url": "http://another-monitoring-service.com/health"
+  }
+]
